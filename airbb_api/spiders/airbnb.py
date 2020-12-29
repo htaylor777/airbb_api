@@ -13,6 +13,7 @@ class AirbnbSpider(scrapy.Spider):
         data = json.loads(response.body)
         with open('airbb.json', 'w') as file:
             file.write(json.dumps(data))
+# test
 
     def parse(self, response):
         pass
